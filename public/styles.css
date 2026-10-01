@@ -269,6 +269,9 @@ strong{font-weight:500;color:var(--ivory)}
 .f-nav a:hover{color:var(--gold)}
 .f-copy{font-size:13px;color:var(--muted-2);margin:0;padding-top:30px;border-top:1px solid var(--line)}
 .f-copy a:hover{color:var(--gold)}
+.f-credit{margin:14px 0 0;font:400 11px/1.6 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--muted-2)}
+.f-credit a{color:var(--muted);background:linear-gradient(var(--gold),var(--gold)) no-repeat 0 100%/0 1px;padding-bottom:3px;transition:color .4s,background-size .5s var(--ease)}
+.f-credit a:hover,.f-credit a:focus-visible{color:var(--gold-2);background-size:100% 1px}
 
 /* lightbox */
 .lightbox{border:0;padding:0;background:transparent;max-width:100vw;max-height:100vh;width:100vw;height:100vh;overflow:hidden}
