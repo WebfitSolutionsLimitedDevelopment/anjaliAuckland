@@ -57,19 +57,6 @@ lb.addEventListener('touchend', e => {
   if (Math.abs(dx) > 50) show(idx + (dx < 0 ? 1 : -1));
 });
 
-// Instagram embeds — load only when near viewport
-const ig = document.getElementById('igGrid');
-if (ig) {
-  const igo = new IntersectionObserver(([en]) => {
-    if (!en.isIntersecting) return;
-    igo.disconnect();
-    const s = document.createElement('script');
-    s.async = true; s.src = 'https://www.instagram.com/embed.js';
-    document.body.appendChild(s);
-  }, { rootMargin: '600px' });
-  igo.observe(ig);
-}
-
 // Enquiry form (FormSubmit AJAX, with graceful fallback)
 const form = document.getElementById('enquiry');
 const status = document.getElementById('formStatus');
